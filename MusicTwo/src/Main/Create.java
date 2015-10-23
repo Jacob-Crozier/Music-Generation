@@ -1,8 +1,13 @@
 package Main;
 
 import java.util.Random;
+import Songs.Track;
 
 public class Create {
+	public Track Track(){
+		return new Track(NoteLengths(), NoteRhythm(), 120, "Random Music", "Guitar", "C5");
+	}
+	
 	public NoteRhythm NoteRhythm(){
 		Random ra = new Random();
 		String values = "";
@@ -11,6 +16,7 @@ public class Create {
 		}
 		return new NoteRhythm(values);
 	}
+	
 
 	public NoteLengths NoteLengths(){
 		Random ra = new Random();
