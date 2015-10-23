@@ -25,7 +25,6 @@ public class Loop implements Runnable{
 		songs[0] = create.Track();
 		System.out.println(songs[0].getNotes());
 		new Player().play(songs[0].getPattern());
-		
 	}	
 
 }
